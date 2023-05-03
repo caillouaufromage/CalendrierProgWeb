@@ -1,0 +1,172 @@
+/* De base : CSS de ModifierCoursAdmin et ModifierCoursEns 
+   Au final j'ai aussi inclu le css de log, sub et ajoutCours un peu plus bas*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  
+/*   background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  max-width: 850px;
+  margin: auto;
+}
+
+label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="submit"],
+input[type="button"] {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 15px;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="button"] {
+  background-color: #ff522b;
+}
+
+input[type="button"]:hover {
+  background-color: #fc3003;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heure-debut {
+  display: flex;
+  align-items: center;
+}
+
+.heure-debut input {
+  width: auto;
+  margin-right: 5px;
+}
+
+ub.php.php .heure-debut span {
+  margin-right: 5px;
+}
+
+
+/* log/sub : CHAMPS IDENTIFIANTS ET MOT DE PASSE*/
+input[type="text"],
+input[type="password"] {
+  color: #838383;
+  border: 1px solid rgb(177, 177, 177);
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 15px;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+/* log/sub : MESSAGE D'ERREUR */
+.error {
+  color: #f44336;
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-size: 14px;
+
+  /* Positionnement en haut à droite */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  /* Premier plan */
+  z-index: 1000;
+}
+
+/* petit effet stylé (ou pas) lorsque l'on survole avec la souris */
+.error:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+
+/* STATISTIQUES : tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* les bordures du tableau */
+th,
+td {
+  border: 1px solid #063317;
+  padding: 8px;
+  text-align: left;
+}
+
+/* l'en tete */
+th {
+  background-color: #18beb1;
+  font-weight: bold;
+}
+
+/* une case sur deux en blanc */
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+/* une case sur deux en gris */
+tr:nth-child(odd) {
+  background-color: #c7c7c7;
+}
+/* petit effet stylax */
+tr:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "etd",
+        "mdp": "etd",
+        "role": "etudiant"
+    },
+    {
+        "id": "ens",
+        "mdp": "ens",
+        "role": "enseignant"
+    },
+    {
+        "id": "adm",
+        "mdp": "adm",
+        "role": "admin"
+    },
+    {
+        "id": "eleve1",
+        "mdp": "elev",
+        "role": "etudiant"
+    },
+    {
+        "id": "Didier",
+        "mdp": "motdepasse",
+        "role": "etudiant"
+    }
+]
