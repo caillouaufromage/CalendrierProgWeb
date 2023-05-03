@@ -29,8 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $coursData[$key]['couleur'] = $couleursMatiere[$_POST['matiere']];
 
             // Mettre à jour la propriété renouvelable
-            if (isset($_POST['repeatWeekly'])) {
-                $coursData[$key]['renouvelable'] = true;
+/*             if (isset($_POST['repeatWeekly'])) {
+    
+ */         if (isset($_POST['renouvelable'])) {
+            $coursData[$key]['renouvelable'] = true;
             } else {
                 $coursData[$key]['renouvelable'] = false;
             }
@@ -155,8 +157,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         value="<?php echo $coursAModifier['commentaireAdm']; ?>">
 
                     <!-- REPETER CHAQUE SEMAINE -->
-                    <input type="checkbox" id="repeatWeekly" name="repeatWeekly" <?php echo ($coursAModifier['renouvelable'] == true) ? 'checked' : ''; ?> />
-                    <label for="repeatWeekly">Répéter chaque semaine</label>
+                    <input type="checkbox" id="renouvelable" name="renouvelable" <?php echo ($coursAModifier['renouvelable'] == true) ? 'checked' : ''; ?> />
+                    <label for="renouvelable">Répéter chaque semaine</label>
 
                     <!-- BOUTON VALIDER ! -->
                     <input type="submit" id="modifiercoursbouton" value="Modifier">

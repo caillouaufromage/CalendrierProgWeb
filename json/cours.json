@@ -14,7 +14,6 @@
         "week_start": "2023-05-01",
         "commentaireAdm": "",
         "renouvelable": true,
-        "repeatWeekly": "on",
         "commentaires": [
             "<b>[etudiant]&nbsp;etd<\/b>: test"
         ]
@@ -50,7 +49,6 @@
         "week_start": "2023-05-01",
         "commentaireAdm": "Cette semaine, revision en vue des exams",
         "renouvelable": true,
-        "repeatWeekly": "on",
         "commentaires": [
             "<b>[admin]&nbsp;adm<\/b>: n'oubliez pas de ramener vos ordinateurs!",
             "<b>[etudiant]&nbsp;etd<\/b>: monsieur je n'ai pas de pc? Comment je fais?",
@@ -71,8 +69,7 @@
         "id": "645245e7a0e4e",
         "week_start": "2023-05-01",
         "commentaireAdm": "",
-        "renouvelable": true,
-        "repeatWeekly": "on"
+        "renouvelable": true
     },
     {
         "type": "TP",
@@ -88,8 +85,7 @@
         "id": "645245e7a0e4e",
         "week_start": "2023-05-01",
         "commentaireAdm": "",
-        "renouvelable": true,
-        "repeatWeekly": "on"
+        "renouvelable": true
     },
     {
         "type": "AMPHI",
@@ -217,8 +213,7 @@
         "id": "6452488d85c22",
         "week_start": "2023-05-01",
         "commentaireAdm": "",
-        "renouvelable": true,
-        "repeatWeekly": "on"
+        "renouvelable": true
     },
     {
         "type": "TP",
@@ -234,8 +229,7 @@
         "id": "645248f86a31d",
         "week_start": "2023-05-01",
         "commentaireAdm": "Projet du semestre ! Le jeu de votre choix en ocaml !",
-        "renouvelable": true,
-        "repeatWeekly": "on"
+        "renouvelable": true
     },
     {
         "type": "AMPHI",
